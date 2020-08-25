@@ -8,15 +8,15 @@ $(document).ready(() => {
     userId = data.id
   });
 
-  $("#clockIn").on("click", function() {
+  $("#clockIn").on("click", function () {
     punch(true)
   })
 
-  $("#clockOut").on("click", function() {
+  $("#clockOut").on("click", function () {
     punch(false)
   })
 
-  $("#getPunches").on("click", function() {
+  $("#getPunches").on("click", function () {
     console.log("punches")
     getPunches()
   })
@@ -24,19 +24,24 @@ $(document).ready(() => {
   function getPunches() {
     $.get(`/api/punches/${userId}`).then(response => console.log(response))
   }
+  // function getPunches() {
+  //   $.get(`/api/punches/${email}`).then(response => console.log(response))
+  // }
 
   function punch(inOut) {
     console.log(userId)
+    // console.log(email)
     $.post("/api/punch", {
       userId: parseInt(userId),
+      // email: parseVar(email)
       punch: inOut
     })
       .then((res) => {
         console.log(res)
-        //window.location.replace("/members");
+        // window.location.replace("/members");
         // If there's an error, handle it by throwing up a bootstrap alert
       })
-      .catch(err => console.log(err)) 
+      .catch(err => console.log(err))
   }
 
 });
