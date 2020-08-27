@@ -5,7 +5,8 @@ $(document).ready(() => {
   console.log(userId)
   $.get("/api/user_data").then(data => {
     $(".member-name").text(data.email);
-    userId = data.id
+    userId = data.id;
+    console.log(userId);
   });
 
   $("#clockIn").on("click", function () {
@@ -22,26 +23,40 @@ $(document).ready(() => {
   })
 
   function getPunches() {
-    $.get(`/api/punches/${userId}`).then(response => console.log(response))
-  }
-  // function getPunches() {
-  //   $.get(`/api/punches/${email}`).then(response => console.log(response))
-  // }
-
-  function punch(inOut) {
-    console.log(userId)
-    // console.log(email)
-    $.post("/api/punch", {
-      userId: parseInt(userId),
-      // email: parseVar(email)
-      punch: inOut
-    })
-      .then((res) => {
-        console.log(res)
-        // window.location.replace("/members");
-        // If there's an error, handle it by throwing up a bootstrap alert
+    $.get(`/api/punches/${userId}`).then(response => {
+      var mapArray = []
+      response.forEach(element => {
+        var day = moment(element.updatedAt).format("dddd");
+        var hour = moment(element.updatedAt).format("LT");
+        mapArray.push({
+          day: hour
+        })
+      });
+      var ctx = document.getElementById('myChart').getContext('2d');
+      var chart = new Chart(ctx, {
+        type: 'bar',
+        data: mapArray,
       })
-      .catch(err => console.log(err))
-  }
+    }
+// function getPunches() {
+//   $.get(`/api/punches/${email}`).then(response => console.log(response))
+// }
+
+function punch(inOut) {
+        console.log(userId);
+        // console.log(email)
+        $.post("/api/punch", {
+          userId: parseInt(userId),
+          // email: parseVar(email)
+          punch: inOut
+        })
+          .then((res) => {
+            console.log(res);
+            console.log(res.updatedAt);
+            // window.location.replace("/members");
+            // If there's an error, handle it by throwing up a bootstrap alert
+          })
+          .catch(err => console.log(err))
+      }
 
 });
