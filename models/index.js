@@ -1,5 +1,6 @@
 'use strict';
 
+// require("../config/.env").config.json()[env];
 var fs = require('fs');
 var path = require('path');
 var Sequelize = require('sequelize');
