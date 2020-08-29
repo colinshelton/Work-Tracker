@@ -11,7 +11,7 @@
 ## Description:
 Time is money and money is time. The most important way to be efficient with both is to be sure you track your time. This is why we developed Work Tracker. Work Tracker is perfect to track the time you spend on any activity, such as employee time spent on the job, freelancers logging hours billed, or even how much time you spend before you must move onto to the next item on your to-do list. 
 ## Installation:
-No installation needed! w0rktracker.herokuapp.com
+No installation needed! https://w0rktracker.herokuapp.com/ 
 ## App Usage:
 Everyone that needs their work hours tracked needs to create their own login using email. Once logged in they just simply click Clock In when starting work and Clock Out when finished. This will track and calculate hours. When the employee wants to look at his/her hours for the week click Get Punches and they can see a graph of the hours worked. 
 ## License Details:  
