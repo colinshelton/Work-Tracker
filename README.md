@@ -8,10 +8,11 @@
 [2. Installation](#Installation)  
 [3. App Usage](#App-Usage)  
 [4. License Details](#License-Details)  
-[5. List of Contributors](#List-of-Contributors)  
-[6. Tests](#Tests)  
-[7. Questions](#Questions)  
-[8. Demo](#Demo)
+[5. Technologies Used](#Technologies-Used)  
+[6. List of Contributors](#List-of-Contributors)  
+[7. Tests](#Tests)  
+[8. Questions](#Questions)  
+[9. Demo](#Demo)
 
 ## Description:
 
@@ -29,7 +30,7 @@ Everyone that needs their work hours tracked needs to create their own login usi
 
 Open source licenses grant permission for anybody to use, modify, and share licensed software for any purpose, subject to conditions preserving the provenance and openness of the software. The following licenses are sorted by the number of conditions, from most (GNU AGPLv3) to none (Unlicense). Notice that the popular licenses featured on the home page (GNU GPLv3 and MIT) fall within this spectrum.
 
-# Technologies Used:
+## Technologies Used:
 
 Node, mySQL, Sequelize.js, Express, Express-Handlebars, Chart.js, Passport.js, Heroku, JawsDB, VS Studio Code
 
