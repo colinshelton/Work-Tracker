@@ -31,8 +31,8 @@ https://github.com/Matthew-Neal
 impulseimg@gmail.com  
 for additional questions
 ## Demo:
-To see the try out this application visit https://w0rktracker.herokuapp.com/ 
-For new users just create a login using an email. 
-To see an example with an employee that has a weeks worth of scheduled work
-Login using Bob's credentials. Email: Bob@bobmail.com  Password: password
+To see the try out this application visit https://w0rktracker.herokuapp.com/  <BR>
+For new users just create a login using an email. <BR>
+To see an example with an employee that has a weeks worth of scheduled work <BR>
+Login using Bob's credentials. Email: Bob@bobmail.com  Password: password <BR>
 
