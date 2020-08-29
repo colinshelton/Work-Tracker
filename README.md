@@ -17,6 +17,8 @@ No installation needed! https://w0rktracker.herokuapp.com/
 Everyone that needs their work hours tracked needs to create their own login using email. Once logged in they just simply click Clock In when starting work and Clock Out when finished. This will track and calculate hours. When the employee wants to look at his/her hours for the week click Get Punches and they can see a graph of the hours worked. 
 ## License Details:  
  Open source licenses grant permission for anybody to use, modify, and share licensed software for any purpose, subject to conditions preserving the provenance and openness of the software. The following licenses are sorted by the number of conditions, from most (GNU AGPLv3) to none (Unlicense). Notice that the popular licenses featured on the home page (GNU GPLv3 and MIT) fall within this spectrum.   
+ #Technologies
+ Node, mySQL, Sequelize.js, Express, Express-Handlebars, Chart.js, Passport.js, Heroku, JawsDB, VS Studio Code
 ## List of Contributors:
 Colin Shelton https://github.com/colinshelton <BR>
 Matt Hanson https://github.com/matthanson333 <BR>
@@ -36,3 +38,4 @@ For new users just create a login using an email. <BR>
 To see an example with an employee that has a weeks worth of scheduled work <BR>
 Login using Bob's credentials. Email: Bob@bobmail.com  Password: password <BR>
 
+![Work-Tracker](./Assets/workTracker.gif)
